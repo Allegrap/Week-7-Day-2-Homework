@@ -17,7 +17,11 @@ public class WordCounterTest {
         wordCounter = new WordCounter("This is my first sentence");
     }
 
-    public void canGetWordCount(){
-        assertEquals("This is my first sentence", wordCounter.getWordCount());
+    public void canReturnSentence(){
+        assertEquals("This is my first sentence", wordCounter.getSentence());
+    }
+
+    public void canReturnWordCount(){
+        assertEquals(5, wordCounter.getWordCount());
     }
 }

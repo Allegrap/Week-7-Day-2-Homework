@@ -13,7 +13,8 @@ public class WordCounter {
     }
 
 
-    public String getWordCount() {
+    public String getSentence() {
         return sentence;
     }
+
 }

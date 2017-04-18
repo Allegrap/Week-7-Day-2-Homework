@@ -17,4 +17,8 @@ public class WordCounter {
         return sentence;
     }
 
+    public int getWordCount() {
+        String[] words = sentence.split(" ");
+        return words.length;
+    }
 }

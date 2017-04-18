@@ -1,6 +1,7 @@
 package example.codeclan.com.wordcounter;
 
 import org.junit.Before;
+import org.junit.Test;
 
 import static junit.framework.Assert.assertEquals;
 
@@ -17,11 +18,13 @@ public class WordCounterTest {
         wordCounter = new WordCounter("This is my first sentence");
     }
 
-    public void canReturnSentence(){
+    @Test
+    public void canReturnSentenceTest(){
         assertEquals("This is my first sentence", wordCounter.getSentence());
     }
 
-    public void canReturnWordCount(){
+    @Test
+    public void canReturnWordCountTest(){
         assertEquals(5, wordCounter.getWordCount());
     }
 }
